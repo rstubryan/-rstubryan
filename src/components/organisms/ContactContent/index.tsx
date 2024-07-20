@@ -1,5 +1,5 @@
 import ContentTitle from "@/components/molecules/ContentTitle";
-import { Mail, Smartphone } from "lucide-react";
+import { Mail, SendHorizonal, Smartphone } from "lucide-react";
 import {
   Card,
   CardContent,
@@ -81,7 +81,10 @@ export default function ContactContent() {
               id={`message`}
               placeholder={`Message`}
             />
-            <Button className={`w-full mt-1`}>Send</Button>
+            <Button className={`w-full mt-4 flex gap-2`}>
+              <SendHorizonal className={`w-4 h-4`} />
+              Send
+            </Button>
           </div>
         </form>
       </div>
