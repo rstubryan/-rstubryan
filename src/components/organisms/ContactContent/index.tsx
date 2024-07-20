@@ -1,5 +1,5 @@
 import ContentTitle from "@/components/molecules/ContentTitle";
-import { Mail, Smartphone } from "lucide-react";
+import { Mail, SendHorizonal, Smartphone } from "lucide-react";
 import {
   Card,
   CardContent,
@@ -12,7 +12,7 @@ import InputForm from "@/components/molecules/InputForm";
 import { Button } from "@/components/ui/button.tsx";
 
 export default function ContactContent() {
-  const whatIDo = [
+  const contactInfo = [
     {
       id: 1,
       icon: Smartphone,
@@ -33,7 +33,7 @@ export default function ContactContent() {
     <>
       <ContentTitle heading={`Contact`} description={``} />
       <div className="grid xl:grid-cols-2 grid-cols-1 gap-5">
-        {whatIDo.map((item) => (
+        {contactInfo.map((item) => (
           <Card
             key={item.id}
             className="bg-secondary dark:bg-primary text-primary dark:text-secondary"
@@ -81,7 +81,10 @@ export default function ContactContent() {
               id={`message`}
               placeholder={`Message`}
             />
-            <Button className={`w-full mt-1`}>Send</Button>
+            <Button className={`w-full mt-4 flex gap-2`}>
+              <SendHorizonal className={`w-4 h-4`} />
+              Send
+            </Button>
           </div>
         </form>
       </div>
