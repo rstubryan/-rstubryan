@@ -30,7 +30,8 @@ export default function MainContent() {
       icon: Smartphone,
       title: "Mobile App Development",
       description: "React Native",
-      content: "Card Content",
+      content:
+        "I'm currently focusing on mobile app development using React Native and NativeWind to efficiently style components.",
       link: "/web-projects",
       footer: "Mobile Apps Projects",
     },
@@ -38,9 +39,10 @@ export default function MainContent() {
       id: 3,
       icon: Server,
       title: "Fullstack Development",
-      description: "Laravel & Inertia JS",
-      content: "Card Content",
-      link: "/web-projects",
+      description: "Laravel & Inertia.js",
+      content:
+        "I'm working on fullstack development projects using Laravel and Inertia.js to build server-side rendered applications with a seamless frontend experience.",
+      link: "/fullstack-projects",
       footer: "Fullstack Projects",
     },
   ];

@@ -160,7 +160,7 @@ export default function ResumeContent() {
               {item.content.map((skill) => (
                 <Button
                   key={skill.id}
-                  className={`flex-1 min-w-max cursor-default`}
+                  className={`flex-1 min-w-max cursor-default dark:bg-secondary text-white`}
                 >
                   {skill.name}
                 </Button>
